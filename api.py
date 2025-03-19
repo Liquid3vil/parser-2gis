@@ -56,7 +56,7 @@ def parse_2gis(request: ParseRequest):
         # Формирование команды
         command = [
             "python3",
-            "/opt/render/project/src/parser-2gis.py",
+            "/opt/render/project/src/parser-2gis",
             "-i", request.url,
             "-o", output_path,
             "-f", request.output_format,
